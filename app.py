@@ -19,7 +19,7 @@ def load_restaurant_data():
 def index():
     """Renders the main page, passing the restaurant data to the template."""
     restaurants = load_restaurant_data()
-    return render_template('index.html', restaurants=restaurants)
+    return render_template('index_template.html', restaurants=restaurants)
 
 # Run the app
 if __name__ == '__main__':

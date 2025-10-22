@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halal Restaurants near Fremont</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="/static/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -14,22 +15,97 @@
     </header>
 
     <main class="restaurant-grid">
-        {% for restaurant in restaurants %}
+
         <div class="card">
             <div class="card-image-container">
-                <img src="{{ url_for('static', filename=restaurant.image_placeholder) }}"
-                     alt="{{ restaurant.name }}" class="card-image">
+                <img src="/static/kabob_fusion.jpg"
+                     alt="Kabob Fusion" class="card-image">
             </div>
             <div class="card-content">
-                <h2 class="restaurant-name">{{ restaurant.name }}</h2>
+                <h2 class="restaurant-name">Kabob Fusion</h2>
 
-                <a href="{{ restaurant.location_link }}" target="_blank" class="directions-link">
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=41986+Fremont+Blvd,+Fremont,+CA+94538" target="_blank" class="directions-link">
                     <i class="fas fa-location-arrow directions-icon"></i>
                     Get Directions
                 </a>
             </div>
         </div>
-        {% endfor %}
+
+        <div class="card">
+            <div class="card-image-container">
+                <img src="/static/momo_kebab.jpg"
+                     alt="Momo &amp; Kebab" class="card-image">
+            </div>
+            <div class="card-content">
+                <h2 class="restaurant-name">Momo &amp; Kebab</h2>
+
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=37100+Fremont+Blvd+Suite+K,+Fremont,+CA+94536" target="_blank" class="directions-link">
+                    <i class="fas fa-location-arrow directions-icon"></i>
+                    Get Directions
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image-container">
+                <img src="/static/habibiz.jpg"
+                     alt="Habibiz (Halal Chinese Cuisine)" class="card-image">
+            </div>
+            <div class="card-content">
+                <h2 class="restaurant-name">Habibiz (Halal Chinese Cuisine)</h2>
+
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=46560+Fremont+Blvd+STE+101,+Fremont,+CA+94538" target="_blank" class="directions-link">
+                    <i class="fas fa-location-arrow directions-icon"></i>
+                    Get Directions
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image-container">
+                <img src="/static/bundoo_khan.jpg"
+                     alt="Bundoo Khan" class="card-image">
+            </div>
+            <div class="card-content">
+                <h2 class="restaurant-name">Bundoo Khan</h2>
+
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=43405+Christy+St,+Fremont,+CA+94538" target="_blank" class="directions-link">
+                    <i class="fas fa-location-arrow directions-icon"></i>
+                    Get Directions
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image-container">
+                <img src="/static/halal_guys.jpg"
+                     alt="The Halal Guys" class="card-image">
+            </div>
+            <div class="card-content">
+                <h2 class="restaurant-name">The Halal Guys</h2>
+
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=5338+Curie+St,+Fremont,+CA+94538" target="_blank" class="directions-link">
+                    <i class="fas fa-location-arrow directions-icon"></i>
+                    Get Directions
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image-container">
+                <img src="/static/mirchi_cafe.jpg"
+                     alt="Mirchi Cafe and Masala Pizza" class="card-image">
+            </div>
+            <div class="card-content">
+                <h2 class="restaurant-name">Mirchi Cafe and Masala Pizza</h2>
+
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=40900+Fremont+Boulevard,+Fremont,+CA+94538" target="_blank" class="directions-link">
+                    <i class="fas fa-location-arrow directions-icon"></i>
+                    Get Directions
+                </a>
+            </div>
+        </div>
+
     </main>
 
     <footer>
