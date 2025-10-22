@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halal Restaurants near Fremont</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Halal Food Finder 🕌</h1>
+        <p>A curated list of Halal restaurants near Fremont, California.</p>
+    </header>
+
+    <main class="restaurant-grid">
+        {% for restaurant in restaurants %}
+        <div class="card">
+            <div class="card-image-container">
+                <img src="{{ url_for('static', filename=restaurant.image_placeholder) }}"
+                     alt="{{ restaurant.name }}" class="card-image">
+            </div>
+            <div class="card-content">
+                <h2 class="restaurant-name">{{ restaurant.name }}</h2>
+
+                <a href="{{ restaurant.location_link }}" target="_blank" class="directions-link">
+                    <i class="fas fa-location-arrow directions-icon"></i>
+                    Get Directions
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Halal App Project</p>
+    </footer>
+</body>
+</html>

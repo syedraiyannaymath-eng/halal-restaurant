@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Kabob Fusion",
+    "image_placeholder": "kabob_fusion.jpg",
+    "location_link": "https://www.google.com/maps/search/?api=1&query=41986+Fremont+Blvd,+Fremont,+CA+94538"
+  },
+  {
+    "name": "Momo & Kebab",
+    "image_placeholder": "momo_kebab.jpg",
+    "location_link": "https://www.google.com/maps/search/?api=1&query=37100+Fremont+Blvd+Suite+K,+Fremont,+CA+94536"
+  },
+  {
+    "name": "Habibiz (Halal Chinese Cuisine)",
+    "image_placeholder": "habibiz.jpg",
+    "location_link": "https://www.google.com/maps/search/?api=1&query=46560+Fremont+Blvd+STE+101,+Fremont,+CA+94538"
+  },
+  {
+    "name": "Bundoo Khan",
+    "image_placeholder": "bundoo_khan.jpg",
+    "location_link": "https://www.google.com/maps/search/?api=1&query=43405+Christy+St,+Fremont,+CA+94538"
+  },
+  {
+    "name": "The Halal Guys",
+    "image_placeholder": "halal_guys.jpg",
+    "location_link": "https://www.google.com/maps/search/?api=1&query=5338+Curie+St,+Fremont,+CA+94538"
+  },
+  {
+    "name": "Mirchi Cafe and Masala Pizza",
+    "image_placeholder": "mirchi_cafe.jpg",
+    "location_link": "https://www.google.com/maps/search/?api=1&query=40900+Fremont+Boulevard,+Fremont,+CA+94538"
+  }
+]
